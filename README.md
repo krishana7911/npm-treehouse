@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# npm-treehouse
+
+`npm-treehouse` is a tool that visualizes the dependency tree of an `npm` package based on its `package.json` and `package-lock.json` files. It allows developers to explore and understand their project dependencies, detect duplicate versions, and optimize the package ecosystem using D3.js for an interactive graph visualization.
+
+## Features
+
+- **Generate package-lock.json**: Upload your `package.json` file, and the backend will generate the corresponding `package-lock.json`.
+- **Interactive Dependency Graph**: Visualizes the package dependencies in an interactive graph, allowing users to explore the relationships between modules.
+- **Optimize Dependencies**: Provides insights into duplicate versions of packages and offers suggestions for optimization.
+- **Real-time Reporting**: Users can track real-time data from their `npm` project and explore the relationships between dependencies.
 
 ## Getting Started
 
-First, run the development server:
+To get started with `npm-treehouse` locally, follow these steps:
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (>=v14.x)
+- [npm](https://npmjs.com/) (>=6.x)
+- [Git](https://git-scm.com/)
+- A text editor like [VS Code](https://code.visualstudio.com/)
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+   git clone https://github.com/krishana7911/npm-treehouse.git
 ```
+2. Navigate to the project directory:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+cd npm-treehouse
+```
+3. Install the required dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
+### Running the Project
+1. Start the development server:
+```
+npm run dev
+```
+2. Open your browser and visit http://localhost:3000 to see the project in action.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Using the Tool
+1. Upload package.json: Upload your project's package.json file.
+2. Generate package-lock.json: The backend will automatically generate the package-lock.json based on the package.json.
+3. View Dependency Graph: Once the package-lock.json is generated, you'll see an interactive graph that visualizes the dependencies of your project.
 
-## Learn More
+### Contributing
+We welcome contributions to improve npm-treehouse! To contribute:
 
-To learn more about Next.js, take a look at the following resources:
+1. Fork the repository.
+2. Create a new branch (`Example: git checkout -b improve-feature`).
+3. Make the appropriate changes in the files.
+4. Add changes to reflect the changes made.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### License
+This project is licensed under the [MIT License](LICENSE)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Acknowledgments
+- Thanks to [D3.js](https://d3js.org/) for the amazing data-driven document manipulation library used for visualizing the dependency graph.
 
-## Deploy on Vercel
+### Future Enhancements
+- Node Version Selector: Allow users to select the Node.js version they want to use for generating the package-lock.json.
+- Advanced Dependency Optimization: Suggest the most efficient ways to reduce package bloat by eliminating unused or outdated dependencies.
+- Automated Dependency Audit: Automatically detect vulnerabilities in dependencies and suggest updates or fixes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Issues & Feedback
+If you encounter any issues or have suggestions, feel free to open an issue on the [GitHub Issues page](https://github.com/krishana7911/npm-treehouse/issues)
