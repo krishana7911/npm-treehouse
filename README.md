@@ -8,6 +8,7 @@
 - **Interactive Dependency Graph**: Visualizes the package dependencies in an interactive graph, allowing users to explore the relationships between modules.
 - **Optimize Dependencies**: Provides insights into duplicate versions of packages and offers suggestions for optimization.
 - **Real-time Reporting**: Users can track real-time data from their `npm` project and explore the relationships between dependencies.
+- **Alternative Safe Packages**: Users can see which packages are vulnerable and then find alternative to it which is secure.
 
 ## Getting Started
 
